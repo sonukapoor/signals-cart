@@ -6,6 +6,5 @@
 <p>No products found.</p>
 } @else {
 <h2>Products in catalog: {{ productsList()?.length }}</h2>
-<p>Items in cart: {{ cartCount() }}</p>
 <app-product-list [products]="productsList()" />
 }
