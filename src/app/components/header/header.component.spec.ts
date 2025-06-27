@@ -50,7 +50,6 @@ describe('HeaderComponent', () => {
       id: 'p1',
       title: 'Signals Book',
       price: 50,
-      imageUrl: '',
     });
 
     fixture.detectChanges(); // ensure the view reflects the signal change

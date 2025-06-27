@@ -1,6 +1,3 @@
-@if (products()?.length === 0) {
-<p>No products to display.</p>
-} @else {
 <div class="product-grid">
   @for (product of products(); track product.id) {
   <div class="product-card">
@@ -10,6 +7,7 @@
       Add to Cart
     </button>
   </div>
+  } @empty {
+  <p>No products to display.</p>
   }
 </div>
-}

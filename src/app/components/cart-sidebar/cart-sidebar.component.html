@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <h3>Your Cart</h3>
+    <button class="close-btn" (click)="closeSidebar()">✖</button>
+  </div>
+
+  <app-cart />
+
+  <div class="sidebar-footer">
+    <a routerLink="checkout" class="checkout-link" (click)="closeSidebar()"
+      >Go to Checkout →</a
+    >
+  </div>
+</div>
+<div class="backdrop" (click)="closeSidebar()"></div>

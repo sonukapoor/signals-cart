@@ -1,1 +1,24 @@
-<p>checkout works!</p>
+<h2>Checkout</h2>
+
+@if (confirmed()) {
+<p class="confirmation">✅ Your order has been placed! Thank you.</p>
+} @else if (isEmpty()) {
+<p>Your cart is empty.</p>
+<a href="/" class="checkout-link">Return to Shop</a>
+} @else {
+<ul class="checkout-list">
+  @for (item of items(); track item.product.id) {
+  <li class="checkout-item">
+    <div>
+      <strong>{{ item.product.title }}</strong>
+      <div>Qty: {{ item.quantity }}</div>
+    </div>
+    <div>${{ item.product.price * item.quantity }}</div>
+  </li>
+  }
+</ul>
+
+<p class="total">Total: {{ total() | currency }}</p>
+
+<button class="confirm-btn" (click)="confirmOrder()">Confirm Order</button>
+}

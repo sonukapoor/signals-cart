@@ -14,7 +14,6 @@ export class HomeComponent {
   private readonly productService = inject(ProductService);
 
   productsList = this.productService.products;
-
   loading = this.productService.isLoading;
   error = this.productService.error;
 }

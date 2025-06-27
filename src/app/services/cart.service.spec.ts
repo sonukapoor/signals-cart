@@ -19,7 +19,6 @@ describe('CartService', () => {
       id: 'p1',
       title: 'Laptop',
       price: 1200,
-      imageUrl: '',
     };
     service.addProduct(product);
     expect(service.totalItems()).toBe(1);
@@ -31,7 +30,6 @@ describe('CartService', () => {
       id: 'p1',
       title: 'Laptop',
       price: 1200,
-      imageUrl: '',
     };
     service.addProduct(product);
     service.clear();
@@ -43,13 +41,12 @@ describe('CartService', () => {
       id: 'abc',
       title: 'Signal Hoodie',
       price: 65,
-      imageUrl: '',
     };
 
     service.addProduct(product);
     service.removeProduct(product.id);
 
-    TestBed.flushEffects();
+    TestBed.tick();
 
     expect(localStorage.setItem).toHaveBeenCalledWith('cart', '[]');
   });
