@@ -1,59 +1,17 @@
-# SignalsCart
+# Apress Source Code
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
+This repository accompanies [_Practical Angular Signals:Levelling Up Your Web Development Skills with Signals, Patterns and Architectures_](https://www.link.springer.com/book/10.1007/979-8-8688-2007-6) by Sonu Kapoor (Apress, 2026).
 
-## Development server
+[comment]: #cover
 
-To start a local development server, run:
+![Cover image](979-8-8688-2006-9.jpg)
 
-```bash
-ng serve
-```
+Download the files as a zip using the green button, or clone the repository to your machine using Git.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Releases
 
-## Code scaffolding
+Release v1.0 corresponds to the code in the published book, without corrections or updates.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Contributions
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+See the file Contributing.md for more information on how you can contribute to this repository.
